@@ -7,12 +7,11 @@ from pathlib import Path
 dirPath = Path("/Users/jolau/Desktop/scope/tdms")
 
 tdmsFilePaths = list(dirPath.glob("*.tdms"))
-
 csvDirPath = dirPath.joinpath("csv")
 csvDirPath.mkdir(exist_ok=True)
 
 for tdmsFilePath in tdmsFilePaths:
-        tdmsFile = TdmsFile.read(str(tdmsFilePath))
+        tdmsFile = TdmsFile.read(tdmsFilePath)
         data = tdmsFile["data"]
 
         time = data['Time (s)']
@@ -22,14 +21,7 @@ for tdmsFilePath in tdmsFilePaths:
         stacked = np.column_stack((time, channel1, channel2))
 
         csvFilePath = csvDirPath.joinpath(tdmsFilePath.stem + ".csv")
-        np.savetxt(csvFilePath, stacked, delimiter=",", header=(time.channel + "," + channel1.channel + "," + channel2.channel), comments="")
+        np.savetxt(csvFilePath, stacked, delimiter=",", header=(time.name + "," + channel1.name + "," + channel2.name), comments="")
         print("saved file: " + str(csvFilePath))
 
 print("Converted all files.")
-
-
-
-# plt.plot(time, channel1)
-# plt.show()
-
-# all_groups = tdms_file.groups()
