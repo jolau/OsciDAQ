@@ -6,10 +6,10 @@ import sys
 
 # dirPath = Path("/Volumes/GoogleDrive/My Drive/WingtraDrive/technical/Hardware/Projects 2020/20200210 DAQ Payload/OsciDAQ/tdms/")
 
-if len(sys.argv) > 1:
-    dirPath = Path(sys.argv[1])
-else:
-    dirPath = Path("/Users/jolau/Desktop/scope/tdms")
+if len(sys.argv) <= 1:
+    sys.exit("No directory as command line argument was given.")
+
+dirPath = Path(sys.argv[1])
 
 tdmsFilePaths = list(dirPath.glob("*.tdms"))
 csvDirPath = dirPath.joinpath("csv")
@@ -28,6 +28,6 @@ for tdmsFilePath in tdmsFilePaths:
     csvFilePath = csvDirPath.joinpath(tdmsFilePath.stem + ".csv")
     np.savetxt(csvFilePath, stacked, delimiter=",", header=(time.name + "," + channel1.name + "," + channel2.name),
                comments="")
-    print("saved file: " + str(csvFilePath))
+    print("Converted file: " + str(csvFilePath))
 
 print("Converted all files.")
