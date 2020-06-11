@@ -21,6 +21,7 @@ if((Index - 1) % 1000 == 0) {
     BatchFolder = "";
 }
 
-Scope.Export("~/Documents/scope/" + BatchFolder + "acq_" + pad(Index, 7) + "_" + timestampString + ".tdms")
+const baseTargetDir = "~/Documents/scope/";
+Scope.Export(baseTargetDir + BatchFolder + "acq_" + pad(Index, 7) + "_" + timestampString + ".tdms")
 
 Index++
