@@ -1,27 +1,34 @@
+import argparse
+
 import matplotlib.pyplot as plt
-import numpy as np
 from nptdms import TdmsFile
 from pathlib import Path
-import sys
 
-if len(sys.argv) <= 1:
-    sys.exit("No tdms file as command line argument was given.")
 
-tdmsFilePath = Path(sys.argv[1])
+def main(tdms_file_path):
+    tdms_file = TdmsFile.read(tdms_file_path)
+    data = tdms_file["data"]
 
-if not tdmsFilePath.exists():
-    sys.exit("No file does not exist.")
+    time = data['Time (s)']
+    channel1 = data['Channel 1 (V)']
+    channel2 = data['Channel 2 (V)']
 
-if tdmsFilePath.suffix != ".tdms":
-    sys.exit("File is not a TDMS file.")
+    plt.plot(time, channel1)
+    plt.plot(time, channel2)
+    plt.show()
 
-tdmsFile = TdmsFile.read(tdmsFilePath)
-data = tdmsFile["data"]
 
-time = data['Time (s)']
-channel1 = data['Channel 1 (V)']
-channel2 = data['Channel 2 (V)']
+def existing_tdms_file_path(string):
+    path = Path(string)
+    if path.exists() and path.suffix == ".tdms":
+        return path
+    else:
+        raise FileNotFoundError(string)
 
-plt.plot(time, channel1)
-plt.plot(time, channel2)
-plt.show()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Plot TDMS file.')
+    parser.add_argument("tdms_file", help="Path to TDMS file.", type=existing_tdms_file_path)
+
+    args = parser.parse_args()
+    main(args.tdms_file)
