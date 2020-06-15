@@ -1,3 +1,5 @@
+__author__ = 'Jonas Lauener'
+
 import argparse
 
 import matplotlib.pyplot as plt

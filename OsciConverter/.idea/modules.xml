@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OsciDAQ.iml" filepath="$PROJECT_DIR$/.idea/OsciDAQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OsciConverter.iml" filepath="$PROJECT_DIR$/.idea/OsciConverter.iml" />
     </modules>
   </component>
 </project>
