@@ -1,4 +1,6 @@
-__author__ = 'Jonas Lauener'
+__author__ = "Jonas Lauener"
+__copyright__ = "2020, Jonas Lauener & Wingtra AG"
+__licence__ = "Mozilla Public License, v. 2.0, https://mozilla.org/MPL/2.0/"
 
 import argparse
 

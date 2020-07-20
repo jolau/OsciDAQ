@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c74d1d10-2b22-4e8f-83b7-e9e3fe0a717a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../VibrationDAQ/reports/mfft_comparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UbxReports/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UbxReports/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OsciConverter/tdms_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/OsciConverter/tdms_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OsciConverter/tdms_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/OsciConverter/tdms_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaveformsWorkspaces/extension_i2c_logging.dwf3work" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaveformsWorkspaces/tdmsLoggingScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/WaveformsWorkspaces/tdmsLoggingScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaveformsWorkspaces/tdmsLoggingScriptSimple.js" beforeDir="false" afterPath="$PROJECT_DIR$/WaveformsWorkspaces/tdmsLoggingScriptSimple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/oscidaq.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/oscidaq.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/oscidaq_2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dUZiOr9GAy62eaU2qZ4UbL2nz0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -23,6 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -38,10 +47,22 @@
       <option name="presentableId" value="Default" />
       <updated>1592481758701</updated>
       <workItem from="1592481760054" duration="15000" />
+      <workItem from="1595235973274" duration="180000" />
+      <workItem from="1595236172222" duration="2539000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1018" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595236051086">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1018" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/600.1463.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1595236051086" />
+    <state x="1072" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595238606612">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1072" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/600.1463.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1595238606612" />
   </component>
 </project>
