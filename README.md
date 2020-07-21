@@ -71,7 +71,7 @@ Remark: The Analog Discovery 2 works only with the Raspberry Pi 4.
 #### Workflow
 ##### Before measurement campaign
 1. Connect oscilloscope to the signals you wish to investigate → [Pinout](#pinout)
-2. [Connect to OsciDAQ](#connect-to-oscidaq) and open the template_logging.dwf3work workspace
+2. [Connect to OsciDAQ](#connect-to-oscidaq) and open the [template_logging.dwf3work](WaveformsWorkspaces/template_logging.dwf3work) workspace
 3. Make your adjustment until you get your signal right
 4. _Save as..._ workspace
 
