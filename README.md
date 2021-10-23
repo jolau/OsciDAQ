@@ -1,6 +1,8 @@
 # OsciDAQ
 Data Acquisition (DAQ) with the [Analog Discovery 2](https://store.digilentinc.com/analog-discovery-2-100msps-usb-oscilloscope-logic-analyzer-and-variable-power-supply/) oscilloscope. The OsciDAQ was developed as part of an internship at [Wingtra](https://wingtra.com/) by [Jonas Lauener](https://www.jolau.ch/).  
 
+**For any technical questions, please open an issue: https://github.com/jolau/OsciDAQ/issues/new/choose**
+
 Copyright (c) 2020, Jonas Lauener & Wingtra AG\
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 ![oscidaq](docs/oscidaq.jpg)
